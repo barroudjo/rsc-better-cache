@@ -1,0 +1,33 @@
+{
+  "name": "rsc-better-cache",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "a more flexible React Server Components cache, to avoid prop drilling",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barroudjo/rsc-better-cache.git"
+  },
+  "keywords": [
+    "RSC",
+    "react",
+    "server",
+    "components",
+    "cache"
+  ],
+  "author": "Jonathan Loss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barroudjo/rsc-better-cache/issues"
+  },
+  "homepage": "https://github.com/barroudjo/rsc-better-cache#readme",
+  "devDependencies": {
+    "@types/react": "^18.2.47"
+  },
+  "peerDependencies": {
+    "react": ">18.2.0"
+  }
+}
