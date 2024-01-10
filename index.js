@@ -32,6 +32,16 @@ class PromiseWithResolverAccess {
     this.rejecter = null;
   }
 
+  /**
+   * 
+   * @param {((value: T) => any) | undefined | null} [resolve]
+   * @param {((reason: any) => any) | undefined | null} [reject] 
+   * @return {PromiseLike<T>}
+   */
+  then (resolve, reject) {
+    return this.promise.then(resolve, reject);
+  }
+
   checkResolverAndRejecter() {
     const sharedText =  'has already been called, can\'t call it twice in the same request';
     if (this.resolver === null) throw new Error(`resolve ${sharedText}`);

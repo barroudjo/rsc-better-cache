@@ -34,7 +34,7 @@ const MyReactServerComponent = async (params) => {
 import { myDataPromiseGetter } from './mySharedData';
 
 const MyOtherReactServerComponent = async () => {
-  const myData = await myDataPromiseGetter().promise;
+  const myData = await myDataPromiseGetter();
   // ...
 }
 ```

@@ -5,7 +5,8 @@
   "description": "a more flexible React Server Components cache, to avoid prop drilling",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "prepublishOnly": "tsc"
   },
   "repository": {
     "type": "git",
