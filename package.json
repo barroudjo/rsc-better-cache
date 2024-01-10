@@ -1,7 +1,7 @@
 {
   "name": "rsc-better-cache",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "a more flexible React Server Components cache, to avoid prop drilling",
   "main": "index.js",
   "scripts": {
