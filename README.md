@@ -24,7 +24,7 @@ import { myDataPromiseGetter } from './mySharedData';
 
 const MyReactServerComponent = async (params) => {
   const myData = await fetch(`some-url/${params.id}`);
-  myDataPromiseGetter().setPromiseResolution(myData);
+  myDataPromiseGetter().resolve(myData);
   // ...
 }
 ```

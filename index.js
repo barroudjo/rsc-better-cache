@@ -20,13 +20,13 @@ class PromiseWithResolverAccess {
   /**
    * @param {T} res
    */
-  setPromiseResolution (res) {
+  resolve (res) {
     this.checkResolverAndRejecter();
     /** @type {(arg: T) => void}*/(this.resolver)(res);
     this.resolver = null;
   }
 
-  setPromiseRejection (err) {
+  reject (err) {
     this.checkResolverAndRejecter();
     /** @type {(arg: any) => void}*/(this.rejecter)(err);
     this.rejecter = null;
@@ -34,8 +34,8 @@ class PromiseWithResolverAccess {
 
   checkResolverAndRejecter() {
     const sharedText =  'has already been called, can\'t call it twice in the same request';
-    if (this.resolver === null) throw new Error(`setPromiseResolution ${sharedText}`);
-    if (this.rejecter === null) throw new Error(`setPromiseRejecter ${sharedText}`);
+    if (this.resolver === null) throw new Error(`resolve ${sharedText}`);
+    if (this.rejecter === null) throw new Error(`reject ${sharedText}`);
   }
 }
 

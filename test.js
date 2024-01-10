@@ -18,7 +18,7 @@ test('Simplest use case', async () => {
   }
   const myDataPromiseGetter = /** @type {typeof createCachedPromiseGetter<MyData>} */(createCachedPromiseGetter)(cache);
   const obj = {someProp: "some value"};
-  myDataPromiseGetter().setPromiseResolution(obj);
+  myDataPromiseGetter().resolve(obj);
 
   const myData = await myDataPromiseGetter().promise;
   assert.strictEqual(myData, obj);
