@@ -1,0 +1,11 @@
+{
+  "files": ["index.js"],
+  "compilerOptions": {
+    "lib": ["ES2015"],
+    "allowJs": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationMap": true,
+    "esModuleInterop": true
+  }
+}

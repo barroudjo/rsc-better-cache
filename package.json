@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/barroudjo/rsc-better-cache#readme",
   "devDependencies": {
-    "@types/react": "^18.2.47"
+    "@types/react": "^18.2.47",
+    "typescript": "^5.3.3"
   },
   "peerDependencies": {
     "react": "^18.2.0"
