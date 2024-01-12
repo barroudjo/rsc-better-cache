@@ -1,7 +1,7 @@
 {
   "name": "rsc-better-cache",
   "type": "module",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "a more flexible React Server Components cache, to avoid prop drilling",
   "main": "index.js",
   "scripts": {
@@ -30,6 +30,6 @@
     "typescript": "^5.3.3"
   },
   "peerDependencies": {
-    "react": "^18.2.0"
+    "react": "next"
   }
 }
